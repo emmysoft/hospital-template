@@ -1,6 +1,24 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Colors } from "../../constant";
 import doctor from "../../assets/doctor.jpg";
+
+const slide = keyframes`
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+  `;
+
+const slideOut = keyframes`
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%)
+    }
+  `;
 
 export const Wrapper = styled.div`
   display: flex;
@@ -23,6 +41,7 @@ export const Wrapper = styled.div`
     font-weight: 500;
     font-size: 2rem;
     text-align: center;
+    animation: ${slide} 2s;
     color: ${Colors.darkColor};
 
     .span {
@@ -39,7 +58,17 @@ export const Wrapper = styled.div`
     font-weight: 300;
     font-size: 1rem;
     color: ${Colors.greyColor};
+    animation: ${slideOut} 2s;
     width: 38.7rem;
     height: 7.5rem;
+  }
+  .button {
+    background-color: linear-gradient(
+      45deg,
+      ${Colors.primaryColor},
+      ${Colors.universalColor},
+      ${Colors.universeColor}
+    );
+    animation: ${slideOut} 2s;
   }
 `;

@@ -1,6 +1,17 @@
 import styled from "styled-components";
 import { Colors } from "../../constant";
 
+// const rotateOut = keyframes`
+//   from {
+//     transform: rotate(360deg) translateX(0%);
+//     opacity: 0;
+//   }
+//   to {
+//     transform: rotate(0deg) translateX(0%);
+//     opacity: 1;
+//   }
+// `;
+
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -15,6 +26,11 @@ export const Wrapper = styled.div`
     gap: 1.5rem;
     background-color: ${Colors.otherColor};
     padding: 1.25rem;
+    &:hover {
+      color: ${Colors.otherColor};
+      transition: transform 0.2s;
+      transform: scale(1.2);
+    }
 
     .head_1 {
       width: 24px;
@@ -37,6 +53,11 @@ export const Wrapper = styled.div`
     gap: 1.5rem;
     background-color: ${Colors.universalColor};
     padding: 1.25rem;
+    &:hover {
+      color: ${Colors.universalColor};
+      transition: transform 0.2s;
+      transform: scale(1.2);
+    }
 
     .head_2 {
       color: ${Colors.universeColor};
@@ -58,6 +79,11 @@ export const Wrapper = styled.div`
     gap: 1.5rem;
     background-color: ${Colors.otherColor};
     padding: 1.25rem;
+    &:hover {
+      color: ${Colors.otherColor};
+      transition: transform 0.2s;
+      transform: scale(1.2);
+    }
 
     .head_3 {
       color: ${Colors.universeColor};

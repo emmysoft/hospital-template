@@ -16,7 +16,7 @@ function Hero() {
           Our hospital offers the best services in the world. Excellence is the
           service of the hospital to its wonderful patients
         </p>
-        <Button to="/" style={button}>
+        <Button to="/" style={button} className="button">
           Check our Services
         </Button>
       </Wrapper>

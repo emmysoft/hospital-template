@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export function Button({ to, children, style }) {
+export function Button({ to, children, style, className }) {
   return (
-    <Link to={to} style={style}>
+    <Link to={to} style={style} className={className}>
       {children}
     </Link>
   );
